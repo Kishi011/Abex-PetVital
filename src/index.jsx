@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 
-import Home from "./App";
+import Index from "./routes";
 import ErrorPage from "./routes/error-page";
 
 import Template from "./routes/template";
@@ -14,7 +14,7 @@ import Template from "./routes/template";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Index />,
     errorElement: <ErrorPage />,
   },
   {
