@@ -10,7 +10,7 @@ input {
 }
 
 input:focus {
-  border: none;
-  outline: 2px solid #8080ff;
-  box-shadow: #8080ff 0 0 0 5px;
+  border: 2px solid #8080ff;
+  outline: 1px solid #8080ff;
+  box-shadow: #8080ff55 0 0 0 5px;
 }

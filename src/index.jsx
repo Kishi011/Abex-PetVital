@@ -9,7 +9,7 @@ import "./index.css";
 import Index from "./routes";
 import ErrorPage from "./routes/error-page";
 
-import Template from "./routes/template";
+import Exemplo from "./routes/exemplo";
 import Teste from "./routes/teste";
 
 const router = createBrowserRouter([
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "template",
-    element: <Template />,
+    path: "exemplo",
+    element: <Exemplo />,
   },
   {
     path: "teste",

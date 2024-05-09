@@ -1,0 +1,9 @@
+* {
+  font-size: x-large;
+}
+
+section {
+  padding: 15px;
+  box-shadow: 3px 3px 18px #888;
+  border-radius: 15px;
+}

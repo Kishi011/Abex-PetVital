@@ -7,7 +7,7 @@ export default () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Isso aqui é uma página de template. Para criar uma outra tela, copie a pasta template em <i>"src/routes/template"</i> e altere o arquivo "index.jsx".
+          Isso aqui é uma página de exemplo. Para criar uma outra tela, copie a pasta exemplo em <i>"src/routes/exemplo"</i> e altere o arquivo "index.jsx".
         </p>
         <p>
           Quando criar uma nova tela, mude o nome da pasta para o nome da tela que será criada.

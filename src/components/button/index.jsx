@@ -4,8 +4,9 @@ function Button(props) {
   return (
     <button 
       type={props.type}
-      onClick={props.onClick}
       style={props.style}
+      disabled={props.disabled}
+      onClick={props.onClick}
     >
       {props.name}
     </button>
