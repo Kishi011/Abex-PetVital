@@ -61,6 +61,11 @@ export default {
           to: '/servicos',
         },
         {
+          title: 'Agendar',
+          icon: 'mdi-calendar-edit',
+          to: '/calendario',
+        },
+        {
           title: 'Meus Pets',
           icon: 'mdi-paw',
           to: '/meus-pets',
