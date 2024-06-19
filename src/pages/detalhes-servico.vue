@@ -33,9 +33,9 @@
     </v-row>
 
     <v-row justify="end">
-      <v-col cols="2">
+      
         <v-btn size="x-large" @click="dialog = true">Agendar esse serviço</v-btn>
-      </v-col>
+      
     </v-row>
 
     <v-dialog v-model="dialog" width="750">
