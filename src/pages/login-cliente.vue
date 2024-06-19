@@ -82,7 +82,8 @@
 
 <script>
   export default {
-    name: "cadastroLogin",
+    name: 'LoginCadastroClientePage',
+    template: 'empty',
     
     data() {
       return {

@@ -28,6 +28,7 @@
       <v-btn
         class="mr-2"
         variant="outlined"
+        to="/login-cliente"
       >Entrar</v-btn>
       <v-avatar
         class="ml-2"
