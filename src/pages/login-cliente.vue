@@ -83,7 +83,7 @@
 <script>
   export default {
     name: 'LoginCadastroClientePage',
-    template: 'empty',
+    layout: 'vazio',
     
     data() {
       return {
