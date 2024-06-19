@@ -1,8 +1,8 @@
 <template>
-  <v-app>
-    <v-navigation-drawer>
-      <h1 class="pa-2">PetVital</h1>
-      <v-divider></v-divider>
+  <v-app >
+    <v-navigation-drawer theme="dark">
+      <h1 class="pa-2 justify-center d-flex " >PetVital</h1>
+
       <v-list>
         <v-list-subheader>Menu</v-list-subheader>
         <v-list-item 
@@ -15,6 +15,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      height="37"
       class="pa-2"
       :elevation="2"
     >
@@ -22,7 +23,7 @@
         label="Pesquisar"
         append-inner-icon="mdi-magnify"
         max-width="500"
-        hide-details
+        hide-details                  
       ></v-text-field>
       <v-spacer></v-spacer>
       <v-btn
