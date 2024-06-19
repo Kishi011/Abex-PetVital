@@ -6,52 +6,46 @@
     </header>
 
     <section class="mb-16">
-      <v-row justify-start>
-        <v-col v-for="item in itens" :key="item" cols="3">
-          <v-card elevation="4" color="blue-grey-lighten-5" class="pa-2">
-            <v-row>
-              <v-col>
-                <v-img rounded :src="item.img" width="175" />
-              </v-col>
-              <v-col>
-                <div class="h-75 overflow-hidden">
-                  <h2>{{ item.nome }}</h2>
-                  <span class="text-wrap" style="text-overflow: ellipsis;">{{ item.desc }}</span>
-                </div>
-                <div class="d-flex justify-end">
-                  <v-btn class="text-decoration-underline text-blue" to="/detalhes-servico">Ver mais</v-btn>
-                </div>
-              </v-col>
-            </v-row>
-          </v-card>
-        </v-col>
+      <v-row justify-start>    
+        <v-card v-for="item in itens" :key="item" elevation="4" color="blue-grey-lighten-5" class="ml-5 pa-2 mr-5" width="400">
+          <v-row class="pa-3" justify="space-between">
+            <v-img rounded :src="item.img" max-width="150" />
+            <div class="d-flex flex-column w-50">
+              <div class="overflow-hidden">
+                <h2>{{ item.nome }}</h2>
+                <span class="text-wrap" style="text-overflow: ellipsis;">{{ item.desc }}</span>
+              </div>
+              <v-spacer></v-spacer>
+              <div class="d-flex justify-end">
+                <v-btn class="text-decoration-underline text-blue" to="/detalhes-servico">Ver mais</v-btn>
+              </div>
+            </div>
+          </v-row>
+        </v-card> 
       </v-row>
     </section>
 
-    <h1 class="mt-5">Serviços em oferta</h1>
+    <h1 class="mb-5">Serviços em oferta</h1>
 
     <section>
-      <v-row>
-        <v-col v-for="item in itens" :key="item" cols="3">
-          <v-card elevation="4" color="blue-grey-lighten-5" class="pa-2">
-            <v-row>
-              <v-col>
-                <v-img rounded :src="item.img" width="175" />
-              </v-col>
-              <v-col>
-                <div class="h-75 overflow-hidden">
-                  <h2>{{ item.nome }}</h2>
-                  <span class="text-wrap" style="text-overflow: ellipsis;">{{ item.desc }}</span>
-                </div>
-                <div class="d-flex justify-end align-end">
-                  <span class="text-green">20% OFF</span>
-                  <v-spacer></v-spacer>
-                  <v-btn class="text-decoration-underline text-blue" to="/detalhes-servico">Ver mais</v-btn>
-                </div>
-              </v-col>
-            </v-row>
-          </v-card>
-        </v-col>
+      <v-row justify-start>    
+        <v-card v-for="item in itens" :key="item" elevation="4" color="blue-grey-lighten-5" class="ml-5 pa-2 mr-5" width="400">
+          <v-row class="pa-3" justify="space-between">
+            <v-img rounded :src="item.img" max-width="150" />
+            <div class="d-flex flex-column w-50">
+              <div class="overflow-hidden">
+                <h2>{{ item.nome }}</h2>
+                <span class="text-wrap" style="text-overflow: ellipsis;">{{ item.desc }}</span>
+              </div>
+              <v-spacer></v-spacer>
+              <div class="d-flex justify-end align-end">
+                <span class="text-green">20% OFF</span>
+                <v-spacer></v-spacer>
+                <v-btn class="text-decoration-underline text-blue" to="/detalhes-servico">Ver mais</v-btn>
+              </div>
+            </div>
+          </v-row>
+        </v-card> 
       </v-row>
     </section>
   </v-container>

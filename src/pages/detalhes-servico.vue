@@ -32,10 +32,8 @@
       </v-col>
     </v-row>
 
-    <v-row justify="end">
-      
-        <v-btn size="x-large" @click="dialog = true">Agendar esse serviço</v-btn>
-      
+    <v-row justify="end">  
+        <v-btn size="x-large" @click="dialog = true">Agendar esse serviço</v-btn>  
     </v-row>
 
     <v-dialog v-model="dialog" width="750">
@@ -56,7 +54,7 @@
           <div>
             <v-row>
               <v-col>
-                <v-date-picker width="350"border></v-date-picker>
+                <v-date-picker width="350" border></v-date-picker>
               </v-col>
             </v-row>
   

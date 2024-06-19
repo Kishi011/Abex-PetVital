@@ -9,33 +9,26 @@
       </v-row>
     </header>
 
-    <section>
-      <v-row v-for="(item, i) in itens" :key="item" class="mb-2">
-        <v-col>
-          <v-card class="pa-5" variant="outlined" @click="selecionado = i">
-            <v-row align="center">
-              <v-col>
-                <v-icon>{{ i === selecionado ? 'mdi-circle-slice-8' : 'mdi-circle-outline' }}</v-icon>
-              </v-col>
-              <v-col cols="11">
-                <h2>{{ item.tipo }}</h2>
-              </v-col>
-              <v-col>
-                <v-icon>{{ item.icone }}</v-icon>
-              </v-col>
+    <section class="pl-10 pr-10">
+      <div class="mb-16">
+        <v-row v-for="(item, i) in itens" :key="item" class="mb-2">
+          <v-card class="pa-5 w-100" variant="outlined" @click="selecionado = i">
+            <v-row align="center" justify="start">
+              <v-icon class="mr-3">{{ i === selecionado ? 'mdi-circle-slice-8' : 'mdi-circle-outline' }}</v-icon>
+              <h2>{{ item.tipo }}</h2>
+              <v-spacer></v-spacer>
+              <v-icon>{{ item.icone }}</v-icon>
             </v-row>
           </v-card>
-        </v-col>
+        </v-row>
+      </div>
+
+      <v-row align="end" justify="space-between">
+        <h2>Valor total: R$ 99,99 </h2>
+        <v-btn size="x-large">Finalizar Pagamento</v-btn>
       </v-row>
     </section>
-    <v-row align="center" justify="space-between">
-      <v-col>
-        <h2>Valor total: R$ 99,99 </h2>
-      </v-col>
-      <v-col cols="auto">
-        <v-btn size="x-large">Finalizar Pagamento</v-btn>
-      </v-col>
-    </v-row>
+
   </v-container>
 </template>
 
