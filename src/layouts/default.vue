@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app theme="light">
     <v-navigation-drawer>
       <h1 class="pa-2">PetVital</h1>
       <v-divider></v-divider>
