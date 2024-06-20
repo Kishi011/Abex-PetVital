@@ -30,7 +30,12 @@
           class="mr-2"
           variant="outlined"
           to="/login-cliente"
-        >Entrar</v-btn>
+        >Entrar Como Cliente</v-btn>
+        <v-btn
+          class="mr-2"
+          variant="outlined"
+          to="/login-petshop"
+        >Entrar Como Petshop</v-btn>
         <v-avatar
           class="ml-2"
           size="40"
