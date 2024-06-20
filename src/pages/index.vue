@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <header class="mb-5">
+    <header class="mb-16">
       <h1>Serviços</h1>
       <span>Procurando dar um tratamento para o seu pet? Dê uma conferida nesses próximos a você</span>
     </header>
