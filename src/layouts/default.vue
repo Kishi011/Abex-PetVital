@@ -59,11 +59,6 @@ export default {
           to: '/',
         },
         {
-          title: 'Serviços',
-          icon: 'mdi-magnify',
-          to: '/servicos',
-        },
-        {
           title: 'Meus Pets',
           icon: 'mdi-paw',
           to: '/meus-pets',
