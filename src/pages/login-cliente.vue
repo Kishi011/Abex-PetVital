@@ -81,21 +81,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'LoginCadastroClientePage',
-    layout: 'vazio',
-    
-    data() {
-      return {
-        login: true,
-        window: 1,
-      }
-    },
-
-    methods: {
-      
+export default {
+  name: 'LoginCadastroClientePage',
+  
+  data() {
+    return {
+      login: true,
+      window: 1,
     }
-  };
+  },
+
+  methods: {
+    
+  }
+};
 </script>
 
 <style>
